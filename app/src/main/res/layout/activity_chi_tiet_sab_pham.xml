@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtProductNameDetail"
+        android:layout_width="212dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <TextView
+        android:id="@+id/txrPriceDetail"
+        android:layout_width="71dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtProductNameDetail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtProductNameDetail"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imbIncrease"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtProductNameDetail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtProductNameDetail"
+        app:layout_constraintTop_toBottomOf="@+id/txtProductNameDetail" />
+
+    <TextView
+        android:id="@+id/txtQuanjtity"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imbIncrease"
+        app:layout_constraintStart_toEndOf="@+id/imbIncrease"
+        app:layout_constraintTop_toTopOf="@+id/imbIncrease"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imbSub"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtQuanjtity"
+        app:layout_constraintStart_toEndOf="@+id/txtQuanjtity"
+        app:layout_constraintTop_toTopOf="@+id/txtQuanjtity" />
+
+    <TextView
+        android:id="@+id/txtDetail"
+        android:layout_width="212dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imbIncrease"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imbIncrease"
+        app:layout_constraintTop_toBottomOf="@+id/imbIncrease" />
+
+    <TextView
+        android:id="@+id/txtProductDetail"
+        android:layout_width="367dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtDetail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtDetail"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetail" />
+
+    <Button
+        android:id="@+id/bttAddToCart"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_button"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtProductDetail"
+        app:layout_constraintStart_toStartOf="@+id/txtProductDetail" />
+</androidx.constraintlayout.widget.ConstraintLayout>
